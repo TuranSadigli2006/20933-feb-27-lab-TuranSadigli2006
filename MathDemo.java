@@ -29,10 +29,10 @@ class MathDemo {
     // e. Returns factorial of a number
     static int factorial(int n){
         if (n < 0)
-            throw new IllegalArgumentException("Number must be non-negative");
+            throw new IllegalArgumentException("Number must be non negative");
         int fact=1;
         for (int i=1;i<=n;i++) {
-            fact *= i;
+            fact *= i; 
         }
         return fact;
     }
