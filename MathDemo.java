@@ -23,15 +23,15 @@ class MathDemo {
     static float mean(int[] args) {
         if (args.length == 0)
             return 0;
-        return (float) sum(args) / args.length;
+        return (float) sum(args)/args.length;
     }
 
     // e. Returns factorial of a number
-    static int factorial(int n) {
+    static int factorial(int n){
         if (n < 0)
             throw new IllegalArgumentException("Number must be non-negative");
-        int fact = 1;
-        for (int i = 1; i <= n; i++) {
+        int fact=1;
+        for (int i=1;i<=n;i++) {
             fact *= i;
         }
         return fact;
